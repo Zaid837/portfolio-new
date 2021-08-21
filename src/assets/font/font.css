@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('../../../public/fonts/Gilroy/Gilroy-Medium.ttf');
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('../../../public/fonts/Gilroy/Gilroy-Light.ttf');
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'Gilroy-SemiBold';
+  src: local('Gilroy'), url('../../../public/fonts/Gilroy/Gilroy-SemiBold.ttf');
+  font-style: normal;
+  font-stretch: normal;
+}
