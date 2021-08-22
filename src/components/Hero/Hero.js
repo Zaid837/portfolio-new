@@ -10,7 +10,9 @@ import { LeftSection } from './HeroStyles';
 
 const Hero = () => {
   const handleClick = () => {
-    window.location.href = 'mailto:ayomide.zaid@gmail.com';
+    window.open(
+      'https://drive.google.com/file/d/1SNabpMQUVQHJJZOoZKLxZbiaVRxrlOA_/view?usp=sharing'
+    );
   };
   return (
     <Section row nopadding>
