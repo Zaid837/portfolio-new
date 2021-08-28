@@ -17,7 +17,7 @@ export const projects = [
     title: 'Dwallet',
     tags: ['React', 'Bootstrap', 'HTML', 'CSS'],
     source: 'https://github.com/Zaid837/Dwallet',
-    visit: 'https://dwallet-app.herokuapp.com/',
+    visit: 'https://dwallet-app.herokuapp.com/dashboard',
     id: 0,
     color: 'hsl(168, 82%, 67%)',
   },
