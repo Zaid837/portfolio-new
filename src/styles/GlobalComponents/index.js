@@ -5,7 +5,7 @@ export const Section = styled.section`
   flex-direction: ${(props) => (props.row ? 'row' : 'column')};
   padding: ${(props) => (props.nopadding ? '0' : '32px 48px 0')};
   margin: 0 auto;
-  max-width: 1040px;
+  max-width: 1400px;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
@@ -182,10 +182,7 @@ export const ButtonBack = styled.div`
   justify-content: center;
   margin: ${({ alt, form }) => (alt || form ? '0' : '0 0 80px')};
   color: #fff;
-  background: ${({ alt }) =>
-    alt
-      ? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)'
-      : 'linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)'};
+
   cursor: pointer;
   transition: 0.5s ease;
   position: relative;
@@ -217,10 +214,8 @@ export const ButtonFront = styled.button`
   left: 0;
   width: 100%;
   height: 100%;
-  background: ${({ alt }) =>
-    alt
-      ? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)'
-      : 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
+  background: rgba(216, 216, 216, 0.2);
+
   opacity: ${({ disabled }) => (disabled ? '.5' : '1')};
   transition: 0.4s ease;
   font-size: ${({ alt }) => (alt ? '20px' : '24px')};
@@ -234,7 +229,7 @@ export const ButtonFront = styled.button`
       : 'none'};
 
   &:hover {
-    opacity: 0;
+    background: hsl(263, 67%, 50%);
   }
   &:focus {
     outline: none;

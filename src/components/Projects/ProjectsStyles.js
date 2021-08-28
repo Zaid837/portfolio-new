@@ -22,12 +22,42 @@ export const GridContainer = styled.section`
   }
 `;
 export const BlogCard = styled.div`
+  border: 3px solid ${(props) => props.color};
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
-  text-align: center;
   width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: space-between;
+  position: relative;
+  &:hover {
+    background: ${(props) => props.color};
+    color: #000;
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
+  }
+`;
+export const ProjectLinkBox = styled.div`
+  align-self: flex-end;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    color: #fff;
+  }
+`;
+
+export const ProjectContent = styled.div`
+  align-self: center;
+  h3 {
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    text-transform: capitalize;
+    text-align: center;
   }
 `;
 export const TitleContent = styled.div`
@@ -97,8 +127,11 @@ export const ExternalLinks = styled.a`
 
 export const TagList = styled.ul`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 2rem;
+  p {
+    font-family: 'Gilroy-Medium';
+  }
 `;
 export const Tag = styled.li`
   color: #d8bfbf;

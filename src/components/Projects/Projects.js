@@ -1,7 +1,10 @@
 import React from 'react';
+import { AiFillGithub, AiOutlineEye } from 'react-icons/ai';
 
 import {
   BlogCard,
+  ProjectLinkBox,
+  ProjectContent,
   CardInfo,
   ExternalLinks,
   GridContainer,
@@ -25,34 +28,28 @@ const Projects = () => (
     <SectionDivider />
     <SectionTitle main>Featured Projects</SectionTitle>
     <GridContainer>
-      {projects.map(
-        ({ id, image, title, description, tags, source, visit }) => (
-          <BlogCard key={id}>
-            <Img src={image} />
-            <TitleContent>
-              <HeaderThree title={title}>{title}</HeaderThree>
-              <Hr />
-            </TitleContent>
-            <CardInfo>{description}</CardInfo>
-            <div>
-              {/* <TitleContent>Stack</TitleContent> */}
-              <TagList>
-                {tags.map((tag, i) => (
-                  <Tag key={i}>{tag}</Tag>
-                ))}
-              </TagList>
-            </div>
-            <UtilityList>
-              <ExternalLinks href={visit} target="_blank">
-                Visit
-              </ExternalLinks>
-              <ExternalLinks href={source} target="_blank">
-                Code
-              </ExternalLinks>
-            </UtilityList>
-          </BlogCard>
-        )
-      )}
+      {projects.map(({ id, title, tags, source, visit, color }) => (
+        <BlogCard key={id} color={color}>
+          <ProjectLinkBox>
+            {source && (
+              <a href={source} target="_blank">
+                <AiFillGithub />
+              </a>
+            )}
+            <a href={visit} target="_blank">
+              <AiOutlineEye />
+            </a>
+          </ProjectLinkBox>
+          <ProjectContent>
+            <h3>{title}</h3>
+          </ProjectContent>
+          <TagList>
+            {tags.map((tag, i) => (
+              <p key={i}>{tag}</p>
+            ))}
+          </TagList>
+        </BlogCard>
+      ))}
     </GridContainer>
   </Section>
 );
