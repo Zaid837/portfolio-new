@@ -23,9 +23,9 @@ const Hero = () => {
         </SectionTitle>
         <SectionText>
           Software engineer based in Lagos, Nigeria who enjoys making fun and
-          interactive things with code. I also specialize in creating eye
-          catching and user focused web applications for clients ranging from
-          individuals or small businesses to large corporations.
+          interactive web interfaces with code. I also specialize in creating
+          eye catching and user focused web applications for clients ranging
+          from individuals or small businesses to large corporations.
         </SectionText>
         <Button onClick={handleClick}>Resume</Button>
       </LeftSection>
