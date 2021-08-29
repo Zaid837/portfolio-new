@@ -35,6 +35,10 @@ export const BlogCard = styled.div`
   &:hover {
     background: ${(props) => props.color};
     color: #000;
+
+    a {
+      color: #000;
+    }
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
