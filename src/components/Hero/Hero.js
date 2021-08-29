@@ -22,7 +22,7 @@ const Hero = () => {
           <br />I am Zaid Tamilore.
         </SectionTitle>
         <SectionText>
-          Software engineer based in Lagos, Nigeria who enjoys making fun and
+          Software engineer based in Lagos, Nigeria who enjoys making clean and
           interactive web interfaces with code. I also specialize in creating
           eye catching and user focused web applications for clients ranging
           from individuals or small businesses to large corporations.
